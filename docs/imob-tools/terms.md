@@ -1,7 +1,7 @@
 ---
 layout: policy
 title: Termos de Uso – Imóveis
-permalink: /imob/terms/
+permalink: /imob-tools/terms/
 ---
 
 # Termos de Uso
