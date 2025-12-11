@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px auto; max-width: 800px; line-height: 1.7; }
-    h1 { font-size: 24px; margin-bottom: 20px; }
-  </style>
-</head>
-<body>
-  <h1>{{ page.title }}</h1>
-  {{ content }}
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        max-width: 860px;
+        margin: 40px auto;
+        padding: 0 20px;
+        line-height: 1.7;
+        color: #333;
+      }
+      h1 { font-size: 28px; margin-bottom: 20px; }
+      h2 { font-size: 22px; margin-top: 32px; }
+      p, li { font-size: 16px; }
+      a { color: #005bbb; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .updated { font-size: 14px; color: #666; margin-bottom: 30px; }
+    </style>
+  </head>
+  <body>
+    <h1>{{ page.title }}</h1>
+    <div class="updated">Última atualização: {{ page.last_modified_at | default: "" }}</div>
+
+    {{ content }}
+
+  </body>
 </html>
