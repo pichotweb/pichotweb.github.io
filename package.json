@@ -1,0 +1,12 @@
+{
+  "name": "i2n",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/build.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/build.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
