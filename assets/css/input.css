@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 6.5rem;
+}
+
+body {
+  background-color: theme('colors.ink');
+  color: theme('colors.paper');
+}
+
+/* Hero: no mobile a foto fica ao lado do nome; no desktop, grande e à direita do texto */
+.hero {
+  display: grid;
+  align-items: center;
+  column-gap: 1.25rem;
+  row-gap: 1rem;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "photo greeting"
+    "bio bio";
+}
+
+.hero-photo {
+  grid-area: photo;
+}
+
+.hero-greeting {
+  grid-area: greeting;
+}
+
+.hero-bio {
+  grid-area: bio;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    column-gap: 4rem;
+    row-gap: 0;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "greeting photo"
+      "bio photo";
+  }
+}
