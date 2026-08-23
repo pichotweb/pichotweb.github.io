@@ -1,17 +1,6 @@
 # i2n — portfólio
 
-Site estático (HTML/CSS/JS puro, sem framework) hospedado no GitHub Pages.
-
-## Estrutura
-
-- `index.html` — a página (Home), em português.
-- `en/index.html` — mesma página, em inglês. É um HTML separado (não JS de tradução) para funcionar 100% estático no GitHub Pages; os dois arquivos precisam ser editados em paralelo quando o conteúdo mudar.
-- `assets/css/input.css` — fonte do CSS (diretivas Tailwind + estilos customizados).
-- `assets/css/build.css` — CSS compilado pelo Tailwind, gerado a partir do `input.css`, versionado no repo.
-- `assets/js/main.js` — comportamento das abas da seção de Experiência (compartilhado pelas duas páginas).
-- `assets/img/` — imagens.
-- `assets/resume/` — PDFs do currículo (`ivan-joaquim-curriculo-pt.pdf` e `ivan-joaquim-resume-en.pdf`), baixados pelo botão "Currículo"/"Resume" do header conforme o idioma da página.
-- `tailwind.config.js` — configuração do Tailwind (cores, fonte); o `content` escaneia os dois HTMLs.
+Site estático (HTML/CSS/JS puro, sem framework).
 
 ## Desenvolvimento
 
